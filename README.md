@@ -1,15 +1,15 @@
 # Django Signals
 
 ## What are Signals in Django?
-1. Signals simply means a gesture, action, or sound that is used to convey information or instructions
-2. In our context signals are the connection between an event and action.
-3. Let us understand with an example, Event is saving a comment and the action is filtering out the abusive words in the comment. This was just an usecase of signals. We will understand more about it later.
+1. Signals simply means a <b>gesture</b>, action, or sound that is used <b>to convey information</b> or instructions.
+2. In our context signals are the <b>connection between an event and action.</b>
+3. Let us understand with an example, <b>Event is saving a comment</b> and the <b>action is filtering out the abusive words</b> in the comment. This was just an usecase of signals. We will understand more about it later.
 3. Now lets go through the definintion of Django signals. Django includes a “signal dispatcher” which helps decoupled applications get notified when actions occur elsewhere in the framework. In a nutshell, <b>signals allow certain senders to notify a set of receivers that some action has taken place.</b>
 4. Basically, signals are used to perform any action on modification of a model instance.
 
 ## Terms to know
-1. Receiver: The function or action that will be executed when an action takes place.
-2. Sender: The Model name which will send the signal.
+1. <b>Receiver:</b> The function or action that will be executed when an action takes place.
+2. <b>Sender:</b> The Model name which will send the signal.
 
 ## Types of signals
 1. <b>pre_save/post_save:</b> Works before/after the method save().
