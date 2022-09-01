@@ -89,4 +89,4 @@ class AccountsConfig(AppConfig):
   3. On the terminal you should see the pre_delete and post_delete print message.
 
 <hr>
-<p align="center">Bidut Karki ✍</p>
+<p align="center"><a href="https://www.linkedin.com/in/bidut-karki-1b194a169">Bidut Karki</a> ✍</p>
