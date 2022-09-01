@@ -14,7 +14,7 @@
 ## Types of signals
 1. <b>pre_save/post_save:</b> Works before/after the method save().
 2. <b>pre_delete/post_delete:</b> Works before/after the method delete().
-3. <b>pre_init/post_init:</b> Works before/after instantiating a model (__init__() method).
+3. <b>pre_init/post_init:</b> Works before/after instantiating a model (_ _init_ _() method).
 
 
 ### Let us understand the project structure for this project
@@ -62,11 +62,24 @@ class AccountsConfig(AppConfig):
 ```
 
 ### Steps to follow if you have cloned this repository
-1. Run the command ``
+1. Create a virtual environment by running: `python -m venv env` in you root directory.
+2. To use the virtual environment run: `source env/bin/activate`  (On Windows use `env\Scripts\activate`)
+3. Run the command `pip install -r requirements.txt`
+4. To make migrations: Run `python manage.py makemigrations` and `python manage.py migrate`
+5. To create a superuser run: `python manage.py createsuperuser`
+6. To run the server: `python manage.py runserver`
+
 
 ### How to test?
 <b>A. For testing pre_save and post_save signals.</b>
   1. Create a super user and add Resource object from admin panel.
+  2. Make sure you have registered the model in `admin.py`
+       ```  from django.contrib import admin
+            from . import models
+
+            # Register your models here.
+            admin.site.register(models.Resource)
+        ```
   2. On the terminal you should see the pre_save and post_save print message.
   
 <b>B. For testing pre_delete and post_delete signals.</b>
