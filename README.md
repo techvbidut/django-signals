@@ -87,3 +87,7 @@ class AccountsConfig(AppConfig):
   2. In the terminal type `python manage.py shell`
   3. Inside the shell run: `from accounts.models import Resource` and `Resource.objects.all().delete()`
   3. On the terminal you should see the pre_delete and post_delete print message.
+
+<hr>
+
+:)
