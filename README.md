@@ -90,4 +90,4 @@ class AccountsConfig(AppConfig):
 
 <hr>
 
-<div style="align:right;"> 😊 Bidut Karki</div>
+<div style="align:right;">Bidut Karki ✍</div>
